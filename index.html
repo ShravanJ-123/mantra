@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preload" as="image" href="images/slider-banner/banner1.png" fetchpriority="high">
     
     <style type="text/css">
         .bannerForm .iti__selected-dial-code {
@@ -54,8 +55,8 @@
         <div class="headerflexdiv d-flex align-items-center justify-content-between">                        
             <!-- <div class="dummydiv"></div> -->
             <a href="#" class="logo d-inline-block">
-                <img src="images/logo.png" class="logo_img" alt="logo">
-                <div class="menuIcoin d-lg-none d-block"><img src="images/icons/menu.svg" alt="menu"></div>
+                <img loading="eager" decoding="async" fetchpriority="high" src="images/logo.png" class="logo_img" alt="logo">
+                <div class="menuIcoin d-lg-none d-block"><img loading="eager" decoding="async" src="images/icons/menu.svg" alt="menu"></div>
             </a>
 
             <nav class="AppNavbar d-flex">                
@@ -68,7 +69,7 @@
                                 
                 <a href="#our-project" class="navlinks text-uppercase" data-toggle="modal" data-target="#customModal">Contact Us</a>
                 <!-- <a href="JavaScript:void(0)" class="navlinks text-uppercase" data-toggle="modal" data-target="#customModal">Enquire Now</a> -->
-                <a href="tel:9172220991" class="d-flex align-items-center gradient headrConNo"><img
+                <a href="tel:9172220991" class="d-flex align-items-center gradient headrConNo"><img loading="eager" decoding="async"
                         src="images/icons/call.svg" class="callsvg" alt="" style="filter: invert(1);"> 91 9172220991</a>
             </nav>           
         </div>
@@ -84,25 +85,9 @@
             </ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="sliderimg d-block w-100" src="images/slider-banner/banner1.png" alt="">
+                    <img loading="eager" decoding="async" fetchpriority="high" class="sliderimg d-block w-100" src="images/slider-banner/banner1.png" alt="">
                 </div>
-                <!-- <div class="carousel-item">
-                    <img class="sliderimg d-block w-100" src="images/slider-banner/banner2.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img class="sliderimg d-block w-100" src="images/slider-banner/banner3.png" alt="">
-                </div> -->
             </div>
-            <!-- <div class="prv-and-next-btns">
-                <a style="position: unset;" class="carousel-control-prev" href="#bannerSliderControl" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a style="position: unset;" class="carousel-control-next" href="#bannerSliderControl" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div> -->
         </div>
 
         <div class="content-over-banner">
@@ -116,7 +101,7 @@
                 <li>65+ Live Projects Across India</li>
                 <li>60K Happy Families Stay in a Godrej Home</li>
             </ul> -->
-            <button class="appbtn gradient" data-toggle="modal" data-target="#customModal">Download Brochure <img
+            <button class="appbtn gradient" data-toggle="modal" data-target="#customModal">Download Brochure <img loading="lazy" decoding="async"
                     src="images/icons/arrow.svg" style="filter: invert(1);" alt=""></button>
         </div>
 
@@ -150,11 +135,11 @@
 
     <section class="banner-mobile-system">
         <div class="banner-mobile-image-wrap position-relative">
-            <img class="banner-mobile-image" src="images/slider-banner/banner1.png" alt="">
+            <img loading="eager" decoding="async" fetchpriority="high" class="banner-mobile-image" src="images/slider-banner/banner1.png" alt="">
             <div class="banner-mobile-content">
                 <h1 class="banner-mobile-title">Mantra Properties</h1>
                 <p class="banner-mobile-subtitle">Explore Projects in Upper Koregaon Park, Mundhwa, Magarpatta and Kharadi</p>
-                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal">Download Brochure <img
+                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal">Download Brochure <img loading="lazy" decoding="async"
                         src="images/icons/arrow.svg" style="filter: invert(1);" alt=""></button>
             </div>
         </div>
@@ -162,12 +147,11 @@
     <!---------------- Slider Section Codes End From Here --------------->
 
 
-
     <section class="book-and-get-details">
         <div class="container" style="max-width: 900px;">
             <div class="div-flex d-flex justify-content-between">
-                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="border: 3px solid white;"> <img src="images/icons/car.svg" alt=""> Book Site Visit</button>
-                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="border: 3px solid white;"> <img src="images/icons/whatsapp.svg" alt=""> Get Details</button>
+                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="border: 3px solid white;"> <img loading="lazy" decoding="async" src="images/icons/car.svg" alt=""> Book Site Visit</button>
+                <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="border: 3px solid white;"> <img loading="lazy" decoding="async" src="images/icons/whatsapp.svg" alt=""> Get Details</button>
             </div>
         </div>
     </section>
@@ -218,29 +202,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <!-- strip section -->
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> -->
-    <!--     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol> -->
-    <!-- <div class="carousel-inner">
-       <div class="carousel-item active">
-          <img src="images/new-strip/destop-banner.jpg" alt="" class="img-fluid d_sm_none" style="cursor:pointer;" data-toggle="modal" data-target="#project44">
-          <img src="images/new-strip/mobile-banner.jpg" alt="" class="img-fluid d_sm_block" style="cursor:pointer;" data-toggle="modal" data-target="#project44"> 
-      </div> -->
-    <!--      <div class="carousel-item">
-        <img src="images/new-strip/strip_dsk.jpg" alt="" class="img-fluid d_sm_none" style="cursor:pointer;" data-toggle="modal" data-target="#project4">
-        <img src="images/new-strip/strip_pop.jpg" alt="" class="img-fluid d_sm_block" style="cursor:pointer;" data-toggle="modal" data-target="#project4"> 
-    </div> -->
-
-    <!-- </div>/ -->
-    <!-- </div> -->
-
-
 <section class="properties_section container-fluid" id="our-project">
     <div class="container">
         <div class="four-plan flexdiv row justify-content-center">
@@ -251,22 +212,21 @@
                     <span>60,000+ Happy Families & Adding More Every Month</span>
                 </h4>
             </div>
-
  <div class="col-md-4 col-sm-6 custom-col" style="position: relative;" id="montreal">
     <div class="inner-col">
-        <img src="images/project-img/pune-1.jpg" alt="" class="img-fluid w-100">
+        <img loading="lazy" decoding="async" src="images/project-img/project-img.png" alt="" class="img-fluid w-100">
 
         <div class="cotnetdiv">
             <p class="pro-name">Mantra Mayfair Residences</p>
 
             <p class="pro-add">
-                <img src="images/location-icon.png" width="20px" alt="icon">
+                <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
                 Koregaon Park Annex (KP NX)
             </p>
 
             <ul>
-                <li><img src="images/checked.png" alt="icon"> Land Parcel: 2.5 Acres</li>
-                <li><img src="images/checked.png" alt="icon"> Possession: June 2029</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Land Parcel: 2.5 Acres</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Possession: June 2029</li>
             </ul>
 
             <!-- Configuration & Pricing Section -->
@@ -290,21 +250,21 @@
     </div>
 </div>
 
-                <div class="col-md-4 col-sm-6 custom-col">
+    <div class="col-md-4 col-sm-6 custom-col">
     <div class="inner-col">
-                        <img src="images/project-img/project-img.png" alt="" class="img-fluid w-100">
+        <img loading="lazy" decoding="async" src="images/project-img/project-img2.png" alt="" class="img-fluid w-100">
 
         <div class="cotnetdiv">
             <p class="pro-name">Mantra Burgundy One Residences</p>
 
             <p class="pro-add">
-                <img src="images/location-icon.png" width="20px" alt="icon">
+                <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
                 Magarpatta
             </p>
 
             <ul>
-                <li><img src="images/checked.png" alt="icon"> Land Parcel: 10 Acres</li>
-                <li><img src="images/checked.png" alt="icon"> Possession: December 2029</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Land Parcel: 10 Acres</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Possession: December 2029</li>
             </ul>
 
             <!-- Configurations -->
@@ -337,18 +297,18 @@
 </div>
 <div class="col-md-4 col-sm-6 custom-col">
     <div class="inner-col">
-        <img src="images/project-img/project-img.png" alt="" class="img-fluid w-100">
+        <img loading="lazy" decoding="async" src="images/project-img/project-img3.png" alt="" class="img-fluid w-100">
 
         <div class="cotnetdiv">
             <p class="pro-name">Mantra Magnus</p>
 
             <p class="pro-add">
-                <img src="images/location-icon.png" width="20px" alt="icon">
+                <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
                 Mundwa
             </p>
 
             <ul>
-                <li><img src="images/checked.png" alt="icon"> Land Parcel: 7 Acres</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Land Parcel: 7 Acres</li>
             </ul>
 
             <!-- Configurations -->
@@ -373,20 +333,20 @@
 
 <div class="col-md-4 col-sm-6 custom-col">
     <div class="inner-col">
-        <img src="images/project-img/project-img.png" alt="" class="img-fluid w-100">
+        <img loading="lazy" decoding="async" src="images/project-img/project-img.png" alt="" class="img-fluid w-100">
 
         <div class="cotnetdiv">
             <p class="pro-name">Mantra Melange – Kharadi Riverside</p>
 
             <p class="pro-add">
-                <img src="images/location-icon.png" width="20px" alt="icon">
+                <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
                 Sainath Nagar, Wadgaon Sheri, Pune – 411014
             </p>
 
             <ul>
-                <li><img src="images/checked.png" alt="icon"> Land Parcel: 8.75 Acres</li>
-                <li><img src="images/checked.png" alt="icon"> 11 Towers • 27 Floors</li>
-                <li><img src="images/checked.png" alt="icon"> Possession: Dec 2029 (RERA)</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Land Parcel: 8.75 Acres</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> 11 Towers • 27 Floors</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Possession: Dec 2029 (RERA)</li>
             </ul>
 
             <!-- Configurations -->
@@ -427,10 +387,6 @@
                 </article>
             </div>
 
-
-
-
-
         </div>
         <div class="highligts-flex-div py-lg-5 py-3 services-two" style="background: #FFFCF1;" id="highlights">
             <div class="container">
@@ -440,7 +396,7 @@
                 </div>
                 <div class="flex-div row p-0">
                     <div class="img-div col-md-6">
-                        <img src="images/highlights-img.png" class="img-fluid" alt="" style="height: 100%;object-fit: cover;">
+                        <img loading="lazy" decoding="async" src="images/highlights-img.png" class="img-fluid" alt="" style="height: 100%;object-fit: cover;">
                     </div>
 
                     <ul class="listing col-md-6" style="text-align: left;">
@@ -485,8 +441,6 @@
         </div>
     </section>
 
-
-
     <section class="section-amenities py-lg-5 py-3" style="background: #FFFCF1;" id="amenities">
         <div class="container">
             <div class="head" style="text-align: center;">
@@ -494,53 +448,46 @@
                 <h4 class="heading">Amenities</h4>
             </div>
             <ul class="flex-div row " style="max-width: 1024px; margin: 0 auto;">
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/pool.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/pool.svg" alt="">
                     <p> Swimming Pool</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/kids.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/kids.svg" alt="">
                     <p>Kids Play Area</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/games.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/games.svg" alt="">
                     <p>Indoor Gym</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/cafeteria.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/cafeteria.svg" alt="">
                     <p>Pool Side Cafeteria</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/hall.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/hall.svg" alt="">
                     <p>Multipurpose Hall</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/party-lawns.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/party-lawns.svg" alt="">
                     <p>Party Lawns</p>
                 </li>
-                <!-- <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/s-citizen.svg" alt="">
-                    <p>Senior Citizens Deck</p>
-                </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/clubhouse.svg" alt="">
-                    <p>Clubhouse</p>
-                </li> -->
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/yoga.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/yoga.svg" alt="">
                     <p>Yoga Area</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/sport-club.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/sport-club.svg" alt="">
                     <p>Sports Club</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/jogging-track.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/jogging-track.svg" alt="">
                     <p>Jogging Track</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/hair-salon.png" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/hair-salon.png" alt="">
                     <p>Salon</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/wifi.png" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/wifi.png" alt="">
                     <p>Internet / Wi-Fi Connectivity</p>
                 </li>
-                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img src="images/amenities/plus.svg" alt="">
+                <li class="col-md-4 col-6 d-flex" style="gap: 6px;"><img loading="lazy" decoding="async" src="images/amenities/plus.svg" alt="">
                     <p>& Many More</p>
                 </li>
             </ul>
 
         </div>
     </section>
-
 
     <section class="section-floor-plan py-lg-5 py-3" style="text-align: center;" id="floor-plan">
         <div class="container ">
@@ -550,51 +497,32 @@
             </div>
             <div class="flex-plans row justify-content-center">
                 <div class="plan-img-div col-md-4" style="position: relative;">
-                    <img src="images/floor-plan/plan1.png" alt="" style="filter: blur(5px);">
+                    <img loading="lazy" decoding="async" src="images/floor-plan/plan1.png" alt="" style="filter: blur(5px);">
                     <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> View
                         Plan</button>
                     <div class="typology">2 BHK </div>
                 </div>
                 <div class="plan-img-div col-md-4" style="position: relative;">
-                    <img src="images/floor-plan/plan1.png" alt="" style="filter: blur(5px);">
+                    <img loading="lazy" decoding="async" src="images/floor-plan/plan1.png" alt="" style="filter: blur(5px);">
                     <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> View
                         Plan</button>
                     <div class="typology">3 BHK </div>
                 </div>
                 <div class="plan-img-div col-md-4" style="position: relative;">
-                    <img src="images/floor-plan/plan2.png" alt="" style="filter: blur(5px);">
+                    <img loading="lazy" decoding="async" src="images/floor-plan/plan2.png" alt="" style="filter: blur(5px);">
                     <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> View
                         Plan</button>
                     <div class="typology">4 BHK </div>
                 </div>
                 <div class="plan-img-div col-md-4" style="position: relative;">
-                    <img src="images/floor-plan/plan2.png" alt="" style="filter: blur(5px);">
+                    <img loading="lazy" decoding="async" src="images/floor-plan/plan2.png" alt="" style="filter: blur(5px);">
                     <button class="appbtn gradient" data-toggle="modal" data-target="#customModal" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> View
                         Plan</button>
                     <div class="typology">Villas </div>
                 </div>
-                <!--<div class="plan-img-div col-md-4" style="position: relative;">
-                    <img src="images/floor-plan/plan2.png" alt="" style="filter: blur(5px);">
-                    <button class="appbtn gradient" data-toggle="modal" data-target="#customModal"
-                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> View
-                        Plan</button>
-                    <div class="typology">5 BHK Homes</div>
-                </div>-->
-
-                <!-- <div class="plan-img-div col-md-4 mt-2" style="position: relative;">
-                    <img src="images/floor-plan/plan3.png" alt="" style="filter: blur(5px);">
-                    <button 
-                        class="appbtn gradient" 
-                        data-toggle="modal" data-target="#customModal"
-                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
-                    > View Plan</button>
-                    <div class="typology">5 BHK Homes</div>
-                </div> -->
             </div>
         </div>
     </section>
-
-
 
     <section class="section-gallery container-fluid py-lg-5 py-3 " id="gallery">
         <div class="head">
@@ -604,22 +532,22 @@
         <div class="flex-div row p-0">
             <div class="img-div col-6 col-lg-3">
                 <a href="images/gallery/g1.png" class="without-caption image-source-link">
-                    <img class="d-block w-100 h-100" src="images/gallery/g1.png" alt="Image 1">
+                    <img loading="lazy" decoding="async" class="d-block w-100 h-100" src="images/gallery/g1.png" alt="Image 1">
                 </a>
             </div>
             <div class="img-div col-6 col-lg-3">
                 <a href="images/gallery/g2.png" class="without-caption image-source-link">
-                    <img class="d-block w-100 h-100" src="images/gallery/g2.png" alt="Image 1">
+                    <img loading="lazy" decoding="async" class="d-block w-100 h-100" src="images/gallery/g2.png" alt="Image 1">
                 </a>
             </div>
             <div class="img-div col-6 col-lg-3">
                 <a href="images/gallery/g3.png" class="without-caption image-source-link">
-                    <img class="d-block w-100 h-100" src="images/gallery/g3.png" alt="Image 1">
+                    <img loading="lazy" decoding="async" class="d-block w-100 h-100" src="images/gallery/g3.png" alt="Image 1">
                 </a>
             </div>
             <div class="img-div col-6 col-lg-3">
                 <a href="images/gallery/g4.png" class="without-caption image-source-link">
-                    <img class="d-block w-100 h-100" src="images/gallery/g4.png" alt="Image 1">
+                    <img loading="lazy" decoding="async" class="d-block w-100 h-100" src="images/gallery/g4.png" alt="Image 1">
                 </a>
             </div>
         </div>
@@ -632,7 +560,7 @@
                 <div class="rera-inner-div text-center">
                     <!-- <p style="color: var(--white); font-size: 11px;">Godrej The Gale</p> -->
                     <a href="images/qrs/qr.jpg" class="without-caption image-source-link">
-                        <img src="images/qrs/qr.jpg" alt="barcode" style="width: 70px;">
+                        <img loading="lazy" decoding="async" src="images/qrs/qr.jpg" alt="barcode" style="width: 70px;">
                     </a>
                     <!-- <p style="color: var(--white); font-size: 11px;">DOLCE VITA </p> -->
                 </div>
@@ -640,14 +568,14 @@
                 <div class="rera-inner-div text-center">
                     <!-- <p style="color: var(--white); font-size: 11px;">Godrej The Gale</p> -->
                     <a href="images/qrs/qr2.png" class="without-caption image-source-link">
-                        <img src="images/qrs/qr2.png" alt="barcode" style="width: 70px;">
+                        <img loading="lazy" decoding="async" src="images/qrs/qr2.png" alt="barcode" style="width: 70px;">
                     </a>
                     <!-- <p style="color: var(--white); font-size: 11px;">DOLCE VITA </p> -->
                 </div>
                 <div class="rera-inner-div text-center">
                     <!-- <p style="color: var(--white); font-size: 11px;">VTP HOMES </p> -->
                     <a href="images/qrs/qr3.png" class="without-caption image-source-link">
-                        <img src="images/qrs/qr3.png" alt="barcode" style="width: 70px;">
+                        <img loading="lazy" decoding="async" src="images/qrs/qr3.png" alt="barcode" style="width: 70px;">
                     </a>
                     <!-- <p style="color: var(--white); font-size: 11px;">FLAMANTE </p> -->
                 </div>
@@ -655,23 +583,12 @@
                 <div class="rera-inner-div text-center">
                     <!-- <p style="color: var(--white); font-size: 11px;">VTP CIELO </p> -->
                     <a href="images/qrs/qr4.png" class="without-caption image-source-link">
-                        <img src="images/qrs/qr4.png" alt="barcode" style="width: 70px;">
+                        <img loading="lazy" decoding="async" src="images/qrs/qr4.png" alt="barcode" style="width: 70px;">
                     </a>
-                    <!-- <p style="color: var(--white); font-size: 11px;">EARTH ONE </p> -->
                 </div>
-
-                <!-- <div class="rera-inner-div text-center">
-                    <img src="images/qrs/the-gateway.webp" alt="" style="width: 70px;">
-                    <p style="color: var(--white); font-size: 11px;">Kohinoor Projects THE GATEWAY </p>
-                </div>
-                <div class="rera-inner-div text-center">
-                    <img src="images/qrs/island-cove.jpg" alt="barcode" style="width: 70px;">
-                    <p style="color: var(--white); font-size: 11px;">Kohinoor Projects ISLAND COVE MAHIM  </p>
-                </div> -->
             </div>
             <div>
                 <br>
-                <!-- <p style="color: var(--white); font-size: 13px; text-align: center; ">VTP Homes Rera: Coming Soon </p> -->
                 <div>
                     <p style="color: var(--white); font-size: 13px; text-align: center; margin: 10px 0;">Agent Rera : A52100036781
                     </p>
@@ -688,20 +605,16 @@
                     regarding services, pricing, availability, and any other details, it is advisable to contact us directly through the provided contact information on this website. Thank you for visiting our website.</p>
                 <span class="reamoredbtn" style="cursor: pointer;">Read More</span>
             </div>
-            <!-- <p style="color: var(--white);width: fit-content;margin: 0 auto 5px auto; padding: 2px 5px;">Agent Rera No.: A52100029343 </p> -->
-
             <div class="rera-text text-center row justify-content-center">
-                <!-- <p style="color: var(--white);margin-bottom: 5px;"></p>                 -->
             </div>            
-
         </div>
     </footer>
     <!-- .sitefooter end -->
 
 
     <a class="fixedIcons whatsapp" href="https://api.whatsapp.com/send?phone=+919172220991&amp;text=Hello, Looking for MANTRA PROPERTIES At Pune. Get in touch with me my name is">
-        <img src="images/icons/whatsapp.png" alt=""> </a>
-    <a class="fixedIcons phone" href="tel:+919172220991"> <img src="images/icons/phone.png" alt=""> </a>
+        <img loading="lazy" decoding="async" src="images/icons/whatsapp.png" alt=""> </a>
+    <a class="fixedIcons phone" href="tel:+919172220991"> <img loading="lazy" decoding="async" src="images/icons/phone.png" alt=""> </a>
 
 
     <!-- mobile-section-footer -->
@@ -719,7 +632,7 @@
 
             <div class="modal-content">
                 <div class="headerimg">
-                    <img src="images/slider-banner/banner1.png" alt="">
+                    <img loading="lazy" decoding="async" src="images/slider-banner/banner1.png" alt="">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
                             viewBox="0 0 16 16">
@@ -785,70 +698,13 @@
 
     <!-- modal project1 -->
 
-    <div class="modal fade modal1" id="project1" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
-
-            <div class="modal-content">
-                <div class="headerimg">
-                    <img src="images/project-img/Godrej Emerald Waters-img.jpg" alt="">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg></button>
-                </div>
-                <div class="banner-form-section" autocomplete="off">
-                    <div class="modalhead-div text-center">
-                        <h3 class="modal-head NovaSquareFont">Godrej Emerald Waters</h3>                        
-                        <!-- <p class="modal-para" style="text-transform: capitalize;">At Mahalunge, Pune </p>                -->
-                        <!-- <p class="modal-para" style="text-transform: capitalize;color: var(--yellow);">Starts At ₹  ₹70 Lacs*</p> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="text" id="qSenderNamemodal1" name="name_contact" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box phone-input" type="text" id="qMobileNomodal1" name="phone_contact" placeholder="Your Mobile Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="email" id="qEmailIDmodal1" name="email_contact" placeholder="Your Email Address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <!-- <input class="w-100 in_box" placeholder="Message" id="qMessagemodal1" name="message_contact"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start checkbox-section pb-2" style="color: #000; font-size:10px; gap: 5px;">
-                        <input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12 mb-2 text-center">
-                            <button class="appbtn gradient" id="SubmitQuerymodal1">submit</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 
     <div class="modal fade modal1" id="project110" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
 
             <div class="modal-content">
                 <div class="headerimg">
-                    <img src="images/project-img/project-img.png" alt="">
+                    <img loading="lazy" decoding="async" src="images/project-img/project-img.png" alt="">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
                             viewBox="0 0 16 16">
@@ -900,69 +756,12 @@
         </div>
     </div>
 
-    <div class="modal fade modal1" id="project2" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
-
-            <div class="modal-content">
-                <div class="headerimg">
-                    <img src="images/project-img/THE GALE AT GODREJ PARK WORLD-img.png" alt="">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg></button>
-                </div>
-                <div class="banner-form-section" autocomplete="off">
-                    <div class="modalhead-div text-center">
-                        <h3 class="modal-head NovaSquareFont">The Gale At Godrej Park World</h3>                        
-                        <!-- <p class="modal-para" style="text-transform: capitalize;">At Mahalunge, Pune </p>                -->
-                        <!-- <p class="modal-para" style="text-transform: capitalize;color: var(--yellow);">Starts At ₹  ₹70 Lacs*</p> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="text" id="qSenderNamemodal2" name="name_contact" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box phone-input" type="text" id="qMobileNomodal2" name="phone_contact" placeholder="Your Mobile Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="email" id="qEmailIDmodal2" name="email_contact" placeholder="Your Email Address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <!-- <input class="w-100 in_box" placeholder="Message" id="qMessagemodal2" name="message_contact"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start checkbox-section pb-2" style="color: #000; font-size:10px; gap: 5px;">
-                        <input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12 mb-2 text-center">
-                            <button class="appbtn gradient" id="SubmitQuerymodal2">submit</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <div class="modal fade modal1" id="project3" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
 
             <div class="modal-content">
                 <div class="headerimg">
-                    <img src="images/project-img/project-img3.png" alt="">
+                    <img loading="lazy" decoding="async" src="images/project-img/project-img3.png" alt="">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
                             viewBox="0 0 16 16">
@@ -1013,182 +812,6 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade modal1" id="project11" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
-
-            <div class="modal-content">
-                <div class="headerimg">
-                    <img src="images/project-img/Godrej Park World-img.jpg" alt="">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg></button>
-                </div>
-                <div class="banner-form-section" autocomplete="off">
-                    <div class="modalhead-div text-center">
-                        <h3 class="modal-head NovaSquareFont">Godrej Park World</h3>                        day with our expert assistance.</p>
-                        <!-- <p class="modal-para" style="text-transform: capitalize;">At Mahalunge, Pune </p>                -->
-                        <!-- <p class="modal-para" style="text-transform: capitalize;color: var(--yellow);">Starts At ₹  ₹70 Lacs*</p> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="text" id="qSenderNamemodal11" name="name_contact" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box phone-input" type="text" id="qMobileNomodal11" name="phone_contact" placeholder="Your Mobile Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="email" id="qEmailIDmodal11" name="email_contact" placeholder="Your Email Address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <!-- <input class="w-100 in_box" placeholder="Message" id="qMessagemodal11" name="message_contact"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start checkbox-section pb-2" style="color: #000; font-size:10px; gap: 5px;">
-                        <input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12 mb-2 text-center">
-                            <button class="appbtn gradient" id="SubmitQuerymodal11">submit</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade modal1" id="project44" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
-
-            <div class="modal-content">
-                <div class="headerimg">
-                    <img src="images/project-img/Godrej-Park-World-img-new.jpg" alt="">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg></button>
-                </div>
-                <div class="banner-form-section" autocomplete="off">
-                    <div class="modalhead-div text-center">
-                        <h3 class="modal-head NovaSquareFont">Godrej Park World R 13</h3>                        
-                        <!-- <p class="modal-para" style="text-transform: capitalize;">At Mahalunge, Pune </p>                -->
-                        <!-- <p class="modal-para" style="text-transform: capitalize;color: var(--yellow);">Starts At ₹  ₹70 Lacs*</p> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="text" id="qSenderNamemodal44" name="name_contact" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box phone-input" type="text" id="qMobileNomodal44" name="phone_contact" placeholder="Your Mobile Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="email" id="qEmailIDmodal44" name="email_contact" placeholder="Your Email Address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <!-- <input class="w-100 in_box" placeholder="Message" id="qMessagemodal44" name="message_contact"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start checkbox-section pb-2" style="color: #000; font-size:10px; gap: 5px;">
-                        <input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12 mb-2 text-center">
-                            <button class="appbtn gradient" id="SubmitQuerymodal44">submit</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="modal fade modal1" id="project45" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 623px;">
-
-            <div class="modal-content">
-                <div class="headerimg">
-                    <img src="images/project-img/godrej-park-springs.jpg" alt="">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#fff" class="bi bi-x-lg"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg></button>
-                </div>
-                <div class="banner-form-section" autocomplete="off">
-                    <div class="modalhead-div text-center">
-                        <h3 class="modal-head NovaSquareFont">Godrej Park Springs</h3>                        
-                        <!-- <p class="modal-para" style="text-transform: capitalize;">At Mahalunge, Pune </p>                -->
-                        <!-- <p class="modal-para" style="text-transform: capitalize;color: var(--yellow);">Starts At ₹  ₹70 Lacs*</p> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="text" id="qSenderNamemodal45" name="name_contact" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box phone-input" type="text" id="qMobileNomodal45" name="phone_contact" placeholder="Your Mobile Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <input class="w-100 in_box" type="email" id="qEmailIDmodal45" name="email_contact" placeholder="Your Email Address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating" style="position: relative;">
-                                <!-- <input class="w-100 in_box" placeholder="Message" id="qMessagemodal45" name="message_contact"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start checkbox-section pb-2" style="color: #000; font-size:10px; gap: 5px;">
-                        <input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12 mb-2 text-center">
-                            <button class="appbtn gradient" id="SubmitQuerymodal45">submit</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
 
     <script>
         (function() {
