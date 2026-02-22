@@ -42,8 +42,8 @@
         }
 
         .chat-screen .chat-body{
-            min-height: 400px;
-            max-height: 400px;
+            min-height: 380px;
+            max-height: 380px;
         }
 
         @media (max-width: 767px){
@@ -54,10 +54,19 @@
 
             .chat-screen{
                 bottom: 120px !important;
+                left: 10px !important;
+                right: 10px !important;
+                width: auto !important;
             }
 
             .chat-screen.show-chat{
                 bottom: 132px !important;
+            }
+
+            .chat-screen .chat-body{
+                min-height: 46vh !important;
+                max-height: 46vh !important;
+                padding: 14px !important;
             }
 
             .chat-bot-icon .shk{

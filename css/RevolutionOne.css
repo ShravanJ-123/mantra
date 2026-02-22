@@ -106,8 +106,79 @@
 
 @media only screen and (max-width: 600px) {
     .chat-screen .chat-body {
-        min-height: 450px;
-        max-height: 450px;
+        min-height: 46vh;
+        max-height: 46vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .chat-screen {
+        width: auto;
+        left: 10px;
+        right: 10px;
+        border-radius: 12px;
+    }
+
+    .chat-screen .chat-header {
+        border-radius: 12px 12px 0 0;
+        padding: 10px 12px;
+    }
+
+    .chat-screen .chat-header .chat-header-title {
+        font-size: 14px;
+    }
+
+    .chat-screen .chat-body .chat-bubble {
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    .chat-screen .chat-mail {
+        padding: 8px;
+    }
+
+    .chat-screen .chat-mail input.form-control {
+        width: 100% !important;
+    }
+
+    .chat-screen .chat-mail button.enquire-form {
+        left: 0;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .form-fields {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .chat-screen .chat-input input {
+        padding: 12px 52px 12px 12px;
+        font-size: 14px;
+    }
+
+    .chat-screen .chat-input .input-action-icon {
+        top: 12px;
+        right: 10px;
+    }
+
+    .main-menu-btn {
+        margin: 3px 2px;
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    .brochure-btn,
+    .contact-sales,
+    .not-interested {
+        margin: 4px 2px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .main-menu-btn a,
+    .brochure-btn a {
+        letter-spacing: 0.3px;
     }
 }
 
