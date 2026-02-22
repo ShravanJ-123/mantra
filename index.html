@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="preload" as="image" href="images/slider-banner/banner1.png" fetchpriority="high">
+     <link href="css/RevolutionOne.css" rel="stylesheet" type="text/css">
     
     <style type="text/css">
         .bannerForm .iti__selected-dial-code {
@@ -24,6 +25,43 @@
         @media(max-width: 767px) {
             .bannerForm .iti__selected-dial-code {
                 color: #000;
+            }
+        }
+    </style>
+    <style>
+        .chat-bot-icon{
+            bottom: 120px !important;
+        }
+
+        .chat-screen{
+            bottom: 170px !important;
+        }
+
+        .chat-screen.show-chat{
+            bottom: 182px !important;
+        }
+
+        .chat-screen .chat-body{
+            min-height: 400px;
+            max-height: 400px;
+        }
+
+        @media (max-width: 767px){
+            .chat-bot-icon{
+                bottom: 88px !important;
+                right: 15px !important;
+            }
+
+            .chat-screen{
+                bottom: 120px !important;
+            }
+
+            .chat-screen.show-chat{
+                bottom: 132px !important;
+            }
+
+            .chat-bot-icon .shk{
+                animation: none !important;
             }
         }
     </style>
@@ -43,11 +81,22 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-16672358319/RVFyCK-VhvcZEK___40-'});
 </script>
-
+      <link rel="stylesheet" href="css/chatv25.css">
+        <link rel="stylesheet" href="css/chat.css">
 
 </head>
 
 <body>
+        <div class="chat-pop-sm">
+    <button id="chat-pop-sm-close" type="button" class="close" data-dismiss="chat-pop-sm" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
+    <div class="chat-pop-txt">
+        “Hey, I'm Pooja Agarwal!“ <strong>How can I help you?</strong>
+    </div>
+    <button class="chat-pop-sm-btn openchat" type="button" id="chat-square-small">Let's Chat</button>
+</div>
+    
 
     <div class="overlay"></div>
     <!---------------- Menu Section Codes Start From Here --------------->
@@ -280,12 +329,12 @@
             </p>
 
             <!-- Launch Offers -->
-            <p class="proj-typology"><strong>Launch Offers</strong></p>
+            <!-- <p class="proj-typology"><strong>Launch Offers</strong></p>
             <p class="pro-price" style="font-size:13px; line-height:1.4;">
                 Zero Booking • Zero GST <br>
                 Zero Floor Rise • Zero Premium <br>
                 Zero Legal Charges
-            </p>
+            </p> -->
 
             <div class="btnsdiv d-flex justify-content-center">
                 <button class="appbtn gradient" data-toggle="modal" data-target="#customModal">
@@ -300,7 +349,7 @@
         <img loading="lazy" decoding="async" src="images/project-img/project-img3.png" alt="" class="img-fluid w-100">
 
         <div class="cotnetdiv">
-            <p class="pro-name">Mantra Magnus</p>
+            <p class="pro-name">Mantra Magnus Residences</p>
 
             <p class="pro-add">
                 <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
@@ -312,10 +361,19 @@
             </ul>
 
             <!-- Configurations -->
-            <p class="proj-typology"><strong>Configurations</strong></p>
+            <!-- <p class="proj-typology"><strong>Configurations</strong></p>
             <p class="pro-price" style="font-size:14px; line-height:1.4;">
                 3 BHK • 3.5 BHK
-            </p>
+            </p> -->
+            <div class="config-pricing">
+                <p class="proj-typology"><strong>Configuration & Pricing</strong></p>
+
+                <ul>
+                    <li>3 BHK – 1136 Sq.Ft. carpet – <strong>₹1.50 Cr(all inclusive)</strong></li>
+                    <li>4.5 BHK – 1687 sq.ft. carpet – <strong>₹2.22 Cr(all inclusive)</strong></li>
+
+                </ul>
+            </div>
 
             <!-- Starting Price -->
             <p class="pro-price">
@@ -340,13 +398,13 @@
 
             <p class="pro-add">
                 <img loading="lazy" decoding="async" src="images/location-icon.png" width="20px" alt="icon">
-                Sainath Nagar, Wadgaon Sheri, Pune – 411014
+                Sainath Nagar, Wadgaon Sheri
             </p>
 
             <ul>
                 <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Land Parcel: 8.75 Acres</li>
                 <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> 11 Towers • 27 Floors</li>
-                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Possession: Dec 2029 (RERA)</li>
+                <li><img loading="lazy" decoding="async" src="images/checked.png" alt="icon"> Possession: Dec 2029 </li>
             </ul>
 
             <!-- Configurations -->
@@ -652,10 +710,10 @@
                         <div class="col-md-12">
                             <select name="projectName" required id="sources1" class="custom-select form-control" placeholder="Select Project" required="" style="color: #c1c1c1;">
                                 <option value="" disabled selected>Choose Project</option>
-                                <option value="Mantra Burgundy One Residences">Mantra Burgundy One Residences </option>
+                                <option value="Mantra Mayfair Residences">Mantra Mayfair Residences</option>
                                 <option value="Mantra Burgundy One Residences">Mantra Burgundy One Residences</option>
                                 <option value="Mantra Magnus">Mantra Magnus</option>
-                                <option value="Mantra Melange – Kharadi Riverside">Mantra Melange – Kharadi Riverside</option>
+                                <option value="Mantra Melange – Kharadi Riverside">Mantra Melange – Kharadi Riverside</option> 
                             </select>
                         </div>
                         <div class="col-md-6">
@@ -812,7 +870,7 @@
             </div>
         </div>
     </div>
-
+    <div class="chat-bot-icon"></div> 
     <script>
         (function() {
             if (window.matchMedia("(max-width: 600px)").matches) {
@@ -831,9 +889,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-
+    <script src="js/canvas_chatbot.js"></script> 
     <script type="text/javascript" language="javascript">
         var versionUpdate = (new Date()).getTime();
         var script = document.createElement("script");
